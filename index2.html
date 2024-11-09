@@ -6,8 +6,16 @@
 <body>
 <!-- <iframe width="100%" height="300" src="//jsfiddle.net/qjy9m54x/embedded/result/" frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe> -->
 
-<iframe width="100%" height="300" src="https://www.beautiful.ai/player/-OBDvE3p4TtvlPOc2g4G/My-First-Presentation" frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true" onload="this.click();"></iframe>
+<iframe width="100%" height="300" src="https://www.beautiful.ai/player/-OBDvE3p4TtvlPOc2g4G/My-First-Presentation" frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true" onload="clickit(this)"></iframe>
+<script>
+function clickit(el) {
+  setTimeout(() => {
+    alert('firing now', el.click);
+    el.click();
+  }, 4000);
+}
 
+</script>
 </body>
 </html> 
 
