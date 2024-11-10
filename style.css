@@ -1,0 +1,115 @@
+     /* styles.css */
+
+     body {font-family: Verdana, sans-serif;}
+     .mySlides {display: none;}
+     img {vertical-align: middle;}
+     
+     /* Slideshow container */
+     .slideshow-container {
+       position: relative;
+     }
+     
+     /* Caption text */
+     
+     /* Number text (1/3 etc) */
+     .numbertext {
+       color: #f2f2f2;
+       font-size: 12px;
+       padding: 8px 12px;
+       position: absolute;
+       top: 0;
+     }
+     
+     /* The dots/bullets/indicators */
+     .dot {
+       height: 15px;
+       width: 15px;
+       margin: 0 2px;
+       background-color: #bbb;
+       border-radius: 50%;
+       display: inline-block;
+       transition: background-color 0.6s ease;
+     }
+     
+     .active {
+       background-color: #717171;
+     }
+     
+     /* Fading animation */
+     .fade {
+       animation-name: fade;
+       animation-duration: 1.5s;
+     }
+     
+     @keyframes fade {
+       from {opacity: .4} 
+       to {opacity: 1}
+     }
+     
+     /* On smaller screens, decrease text size */
+     @media only screen and (max-width: 300px) {
+       .text {font-size: 11px}
+     }
+     
+     
+     body {
+         font-family: Arial, sans-serif;
+         display: grid;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+         margin: 0;
+         background-color: #fff;
+         align-content: center;
+     }
+     
+     .container {
+         text-align: left;
+         zoom: 3;
+     }
+     
+     h1 {
+         font-size: 36px;
+         font-weight: bold;
+         margin: 0;
+     }
+     
+     .content {
+         display: flex;
+         align-items: center;
+         margin-top: 20px;
+     }
+     
+     .circle {
+         width: 80px;
+         height: 80px;
+         background-color: #0099a8;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     
+     .arrow {
+         font-size: 30px;
+         color: white;
+     }
+     
+     .text {
+         margin-left: 15px;
+         text-align: left;
+     }
+     
+     .text p:first-child {
+         font-size: 24px;
+         font-weight: normal;
+         margin: 0;
+     }
+     
+     .text p:last-child {
+         font-size: 24px;
+         font-weight: normal;
+         margin: 0;
+     }
+     
+     * {box-sizing: border-box;}
