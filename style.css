@@ -66,6 +66,8 @@
      .container {
          text-align: left;
          zoom: 3;
+          width: 350px;
+          margin-left: 100px;
      }
      
      h1 {
