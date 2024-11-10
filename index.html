@@ -10,22 +10,10 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  width:100%;
-  height: 1200px;
   position: relative;
-  margin: auto;
 }
 
 /* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 45px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -70,16 +58,18 @@ img {vertical-align: middle;}
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
     background-color: #fff;
+    align-content: center;
 }
 
 .container {
-    text-align: center;
+    text-align: left;
+    zoom: 3;
 }
 
 h1 {
@@ -144,7 +134,7 @@ h1 {
 </div> -->
 
 
-  <div class="container mySlides fade">
+  <div class="container mySlides fade" style="display: block;">
       <h1>Important time</h1>
       <div class="content">
           <div class="circle">
@@ -163,8 +153,8 @@ h1 {
 </div>
 
 </div>
-
-<div style="text-align:center">
+<div style="clear: both;">&nbsp;</div>
+<div style="text-align:center; ">
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
@@ -172,7 +162,7 @@ h1 {
 
 <script>
 let slideIndex = 0;
-showSlides();
+// showSlides();
 
 function showSlides() {
   let i;
